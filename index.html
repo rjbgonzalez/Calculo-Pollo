@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Empaque de Pollo</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra superior con el logo -->
+    <header>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMy-8HwgHu8Gn41zbX3t9DhdHMn2RCSpYUHQ&s" alt="Logo de la Empresa">
+        </div>
+        <h1>Calcular Empaque de Pollo</h1>
+    </header>
+
+    <div class="containerPorci">
+        <div class="form-group">
+            <label for="pesoPolloPorcionado">Peso del Pollo Porcionado(kg)</label>
+            <input type="number" id="pesoPolloPorcionado" placeholder="Ingrese el peso en kg">
+        </div>
+        <button onclick="calcularPorcionado()">Calcular</button>
+
+        <div class="resultsPorci">
+            <h2>Resultados:</h2>
+            <div class="result-agua">
+                <h3>Agua</h3>
+                <p id="resultadoAguaPorcionado"></p>
+            </div>
+            <div class="result-marinador">
+                <h3>Marinador</h3>
+                <p id="resultadoMarinadorPorcionado"></p>
+            </div>
+            <div class="result-bolsas">
+                <h3>Bolsas Necesarias</h3>
+                <p id="resultadoBolsasPorcionado"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerTrozo">
+        <div class="form-group">
+            <label for="pesoPolloTrozos">Peso del Pollo Trozos(kg):</label>
+            <input type="number" id="pesoPolloTrozos" placeholder="Ingrese el peso en kg">
+        </div>
+        <button onclick="calcularTrozos()">Calcular</button>
+
+        <div class="results">
+            <h2>Resultados:</h2>
+            <div class="result-item">
+                <h3>Agua</h3>
+                <p id="resultadoAguaTrozos"></p>
+            </div>
+            <div class="result-item">
+                <h3>Marinador</h3>
+                <p id="resultadoMarinadorTrozos"></p>
+            </div>
+            <div class="result-item">
+                <h3>Bolsas Necesarias</h3>
+                <p id="resultadoBolsasTrozos"></p>
+            </div>
+            <div class="result-item">
+                <h3>Cantidad de Trozos por Bolsa</h3>
+                <p id="resultadoTrozos"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
